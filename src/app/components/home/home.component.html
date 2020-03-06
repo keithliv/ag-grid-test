@@ -1,0 +1,36 @@
+<div align='center'>
+    <h1>List of Users</h1>
+</div>
+
+<table class = "table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>
+                {{u.id}}
+            </td>
+            <td>
+                {{u.username}}
+            </td>
+            <td>
+                {{u.firstname}}
+            </td>
+            <td>
+                {{u.lastname}}
+            </td>
+            <td>
+                {{u.email}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<router-outlet></router-outlet>
