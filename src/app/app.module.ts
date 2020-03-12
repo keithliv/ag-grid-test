@@ -8,11 +8,13 @@ import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 import {UserDataService} from "./services/user-data/user-data.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        UserComponent
     ],
     imports: [
         BrowserModule,
